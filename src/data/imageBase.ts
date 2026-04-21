@@ -17,4 +17,4 @@ export const u = (id: string, variant: Variant = 'card') =>
   `${UNSPLASH_BASE}/photo-${id}?${VARIANT_PARAMS[variant]}`
 
 export const PLACEHOLDER_IMG =
-  'https://placehold.co/800x600/1a3764/ffffff?text=IRE+Dental'
+  'https://placehold.co/800x600/1a3764/ffffff?text=Jireh+Dental'

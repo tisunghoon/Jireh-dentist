@@ -1,15 +1,11 @@
 // 이레치과 의료진 샘플 프로필 (부천 역곡 · 4인 원장 체제 가정).
 // 실제 원장님 자료 수령 후 이 파일만 교체하면 전체 페이지에 반영됩니다.
-// 초안 단계에서는 레퍼런스 사이트의 의료진 사진을 임시로 핫링크합니다.
-
-const DR = (n: number) => `https://seoulpartner.co.kr/images/common/drimg${n}.png`
 
 export type Doctor = {
   id: string
   name: string
   role: string
   specialty: string
-  image: string
   credentials: string[]
 }
 
@@ -19,7 +15,6 @@ export const DOCTORS: Doctor[] = [
     name: '김민재',
     role: '대표원장',
     specialty: '통합치의학 · 임플란트',
-    image: DR(1),
     credentials: [
       '서울대학교 치과대학 졸업',
       '서울대학교 치과병원 통합치의학과 수련',
@@ -31,10 +26,9 @@ export const DOCTORS: Doctor[] = [
   },
   {
     id: 'dr2',
-    name: '이서윤',
+    name: '배성인',
     role: '진료원장',
     specialty: '보철 · 심미치료',
-    image: DR(2),
     credentials: [
       '연세대학교 치과대학 졸업',
       '연세대학교 치과병원 보철과 수련',
@@ -49,7 +43,6 @@ export const DOCTORS: Doctor[] = [
     name: '정하늘',
     role: '진료원장',
     specialty: '치아교정 · 투명교정',
-    image: DR(4),
     credentials: [
       '경희대학교 치과대학 졸업',
       '경희대학교 치과병원 교정과 수련',
@@ -64,7 +57,6 @@ export const DOCTORS: Doctor[] = [
     name: '한지우',
     role: '진료원장',
     specialty: '소아치과 · 예방치료',
-    image: DR(6),
     credentials: [
       '이화여자대학교 임상치의학대학원 소아치과 전공',
       '前 서울대학교 어린이병원 소아치과 페어',

@@ -20,7 +20,7 @@ type Slide = {
 const slides: Slide[] = [
   {
     image: u('1629909613654-28e377c37b09', 'hero'),
-    eyebrow: 'IRE DENTAL CLINIC · 역곡역 1번 출구 도보 2분',
+    eyebrow: 'JIREH DENTIST · 역곡역 1번 출구 도보 2분',
     titleA: '역곡 가족의',
     titleB: '평생 주치의, 이레치과',
     description:

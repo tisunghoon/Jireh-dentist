@@ -11,24 +11,11 @@
   transform: translateY(-6px);
   box-shadow: var(--shadow-lg);
 }
-.doctor-card__photo {
-  aspect-ratio: 1 / 1;
-  overflow: hidden;
-  background: #e5e5e5;
-}
-.doctor-card__photo img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  transition: transform .8s var(--ease);
-}
-.doctor-card:hover .doctor-card__photo img { transform: scale(1.05); }
 
 .doctor-card__body {
-  padding: 24px 28px 28px;
+  padding: 40px 28px;
   text-align: center;
   border: 1px solid var(--color-border);
-  border-top: 0;
 }
 .doctor-card__role {
   display: inline-block;

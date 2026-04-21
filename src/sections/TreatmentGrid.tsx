@@ -15,17 +15,13 @@ export default function TreatmentGrid() {
         <div className="treatment-grid__list">
           {TREATMENTS.map((t) => (
             <Link key={t.slug} to={`/treatments/${t.slug}`} className="treatment-card">
-              <div className="treatment-card__image">
-                <img src={t.image} alt={t.title} loading="lazy" />
-                <div className="treatment-card__overlay">
-                  <span>자세히 보기</span>
-                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-                </div>
-              </div>
               <div className="treatment-card__body">
                 <h3>{t.title}</h3>
                 <span>{t.subtitle}</span>
               </div>
+              <span className="treatment-card__arrow" aria-hidden="true">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              </span>
             </Link>
           ))}
         </div>

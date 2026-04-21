@@ -28,7 +28,6 @@ export default function TreatmentDetail() {
         eyebrow={treatment.subtitle.toUpperCase()}
         title={treatment.title}
         description={treatment.description}
-        bg={treatment.image}
       />
 
       <section className="section">
@@ -40,9 +39,6 @@ export default function TreatmentDetail() {
           />
 
           <div className="td-overview">
-            <div className="td-overview__image">
-              <img src={treatment.image} alt={treatment.title} loading="lazy" />
-            </div>
             <div className="td-overview__body">
               <span className="td-overview__sub">{treatment.subtitle}</span>
               <h3>{treatment.title}</h3>
@@ -73,9 +69,6 @@ export default function TreatmentDetail() {
               .map((t) => (
                 <li key={t.slug}>
                   <Link to={`/treatments/${t.slug}`}>
-                    <div className="td-related__thumb">
-                      <img src={t.image} alt={t.title} loading="lazy" />
-                    </div>
                     <span>{t.title}</span>
                   </Link>
                 </li>

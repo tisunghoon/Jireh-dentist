@@ -16,9 +16,6 @@ export default function DoctorsRow() {
         <div className="doctors-row__grid">
           {DOCTORS.map((d) => (
             <div key={d.id} className="doctor-card">
-              <div className="doctor-card__photo">
-                <img src={d.image} alt={`${d.name} ${d.specialty}`} loading="lazy" />
-              </div>
               <div className="doctor-card__body">
                 <span className="doctor-card__role">{d.role}</span>
                 <h3 className="doctor-card__name">{d.name}</h3>

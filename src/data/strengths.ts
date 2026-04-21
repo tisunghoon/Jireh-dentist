@@ -23,7 +23,7 @@ export const STRENGTHS: Strength[] = [
     subtitle: 'Digital Implant',
     description:
       '3D CT와 컴퓨터 시뮬레이션을 활용해 정밀하고 안전하게 시술합니다.',
-    image: u('1593696140826-c58b021acf8b', 'card'),
+    image: u('1600170311833-c2cf5280ce49', 'card'),
   },
   {
     num: '03',

@@ -3,12 +3,12 @@
 
 export const CLINIC = {
   name: '이레치과',
-  nameEn: 'IRE DENTAL CLINIC',
+  nameEn: 'JIREH DENTIST',
   tagline: '역곡에서 평생 함께하는 가족 주치의',
   slogan: '한 분 한 분의 치아를 내 가족처럼',
 
-  phone: '032-343-2875',
-  phoneTel: 'tel:032-343-2875',
+  phone: '032-345-9075',
+  phoneTel: 'tel:032-345-9075',
 
   address: '경기도 부천시 소사구 경인로 825, 3층',
   addressDetail: '역곡역 1번 출구 도보 2분 · 건물 3층 (엘리베이터 이용)',

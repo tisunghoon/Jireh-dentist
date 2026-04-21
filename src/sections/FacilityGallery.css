@@ -7,11 +7,28 @@
   position: relative;
   aspect-ratio: 4 / 3;
   overflow: hidden;
-  background: #e5e5e5;
+  background:
+    linear-gradient(135deg, #eef1f6 0%, #dde3ed 100%);
   cursor: pointer;
   padding: 0;
 }
+.facility__item::after {
+  content: attr(data-caption);
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-primary);
+  font-size: 15px;
+  font-weight: 600;
+  letter-spacing: .05em;
+  opacity: .55;
+  pointer-events: none;
+}
 .facility__item img {
+  position: relative;
+  z-index: 1;
   width: 100%;
   height: 100%;
   object-fit: cover;

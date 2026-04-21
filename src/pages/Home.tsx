@@ -5,7 +5,6 @@ import DoctorsRow from '../sections/DoctorsRow'
 import Philosophy from '../sections/Philosophy'
 import TreatmentGrid from '../sections/TreatmentGrid'
 import Strengths from '../sections/Strengths'
-import BeforeAfterSlider from '../sections/BeforeAfterSlider'
 import FacilityGallery from '../sections/FacilityGallery'
 import Reviews from '../sections/Reviews'
 import ContactCTA from '../sections/ContactCTA'
@@ -20,7 +19,6 @@ export default function Home() {
       <Philosophy />
       <TreatmentGrid />
       <Strengths />
-      <BeforeAfterSlider />
       <FacilityGallery />
       <Reviews />
       <ContactCTA />

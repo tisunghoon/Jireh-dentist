@@ -16,7 +16,7 @@ export default function AboutIntro() {
           </div>
 
           <div className="about-intro__text">
-            <span className="sect-head__eyebrow">ABOUT IRE DENTAL · 부천 역곡</span>
+            <span className="sect-head__eyebrow">ABOUT JIREH DENTIST · 부천 역곡</span>
             <h2 className="about-intro__title">
               역곡 한 건물 안에서,<br />
               <b>온 가족 치과 진료를 완성합니다</b>

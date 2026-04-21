@@ -1,11 +1,9 @@
 import { Link } from 'react-router-dom'
 import { CLINIC } from '../data/clinic'
-import { u } from '../data/imageBase'
 import './ContactCTA.css'
 
 const CTAS = [
   {
-    bg: u('1589820296156-2454bb8a6ad1', 'card'),
     eyebrow: 'TEL',
     title: '전화 상담',
     desc: '진료·예약 문의를 전화로 편하게 남겨주세요.',
@@ -14,7 +12,6 @@ const CTAS = [
     external: false,
   },
   {
-    bg: u('1590086782957-93c06ef21604', 'card'),
     eyebrow: 'HOURS',
     title: '진료시간 안내',
     desc: '화·목 야간진료 20:30까지 · 토요일 14:00까지 · 일요일 및 공휴일은 휴진합니다.',
@@ -24,7 +21,6 @@ const CTAS = [
     internal: true,
   },
   {
-    bg: u('1583324113626-70df0f4deaab', 'card'),
     eyebrow: 'VISIT',
     title: '오시는 길',
     desc: '역곡역 1번 출구 도보 2분 · 지하 주차장 2시간 무료 이용 가능.',
@@ -40,8 +36,7 @@ export default function ContactCTA() {
     <section className="cta">
       <ul className="cta__grid">
         {CTAS.map((c, i) => (
-          <li key={i} className="cta-card" style={{ backgroundImage: `url(${c.bg})` }}>
-            <div className="cta-card__veil" />
+          <li key={i} className="cta-card">
             <div className="cta-card__body">
               <span className="cta-card__eyebrow">{c.eyebrow}</span>
               <h3 className="cta-card__title">{c.title}</h3>

@@ -20,10 +20,16 @@ export default function FacilityGallery() {
             <button
               key={i}
               className="facility__item"
+              data-caption={f.caption}
               onClick={() => setLightbox(i)}
               aria-label={`${f.caption} 확대 보기`}
             >
-              <img src={f.src} alt={f.caption} loading="lazy" />
+              <img
+                src={f.src}
+                alt={f.caption}
+                loading="lazy"
+                onError={(e) => { (e.currentTarget as HTMLImageElement).style.display = 'none' }}
+              />
               <span className="facility__caption">{f.caption}</span>
               <span className="facility__zoom" aria-hidden="true">⤢</span>
             </button>

@@ -21,9 +21,6 @@ export default function DoctorsPage() {
           <ul className="doctors-page__grid">
             {DOCTORS.map((d) => (
               <li key={d.id} className="doctor-full">
-                <div className="doctor-full__photo">
-                  <img src={d.image} alt={d.name} loading="lazy" />
-                </div>
                 <div className="doctor-full__body">
                   <span className="doctor-full__role">{d.role}</span>
                   <h3 className="doctor-full__name">
