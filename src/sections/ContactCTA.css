@@ -1,0 +1,74 @@
+.cta {
+  display: block;
+}
+.cta__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+.cta-card {
+  position: relative;
+  min-height: 360px;
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  overflow: hidden;
+  display: flex;
+}
+.cta-card__veil {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(10, 26, 50, .55) 0%, rgba(10, 26, 50, .85) 100%);
+  transition: background var(--dur) var(--ease);
+}
+.cta-card:hover .cta-card__veil {
+  background: linear-gradient(180deg, rgba(26, 55, 100, .7) 0%, rgba(10, 26, 50, .9) 100%);
+}
+.cta-card__body {
+  position: relative;
+  z-index: 1;
+  padding: 56px 44px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 14px;
+  width: 100%;
+}
+.cta-card__eyebrow {
+  font-size: 11px;
+  letter-spacing: .2em;
+  color: var(--color-accent);
+  font-weight: 700;
+}
+.cta-card__title {
+  font-size: 26px;
+  font-weight: 700;
+  letter-spacing: -.01em;
+}
+.cta-card__desc {
+  font-size: 14px;
+  color: rgba(255, 255, 255, .8);
+  line-height: 1.7;
+  margin-bottom: 20px;
+}
+.cta-card__btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 14px 0;
+  font-size: 14px;
+  font-weight: 600;
+  color: #fff;
+  border-top: 1px solid rgba(255, 255, 255, .25);
+  transition: gap var(--dur) var(--ease), color var(--dur) var(--ease);
+}
+.cta-card__btn span {
+  transition: transform var(--dur) var(--ease);
+}
+.cta-card:hover .cta-card__btn { color: var(--color-accent); }
+.cta-card:hover .cta-card__btn span { transform: translateX(6px); }
+
+@media (max-width: 1024px) {
+  .cta__grid { grid-template-columns: 1fr; }
+  .cta-card { min-height: 280px; }
+  .cta-card__body { padding: 44px 32px; }
+}

@@ -1,0 +1,118 @@
+.td-empty {
+  padding: 160px 0;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  align-items: center;
+}
+.td-empty h1 {
+  font-size: 26px;
+  color: var(--color-primary);
+}
+
+.td-overview {
+  display: grid;
+  grid-template-columns: 1.1fr 1fr;
+  gap: 60px;
+  align-items: center;
+}
+.td-overview__image {
+  aspect-ratio: 4 / 3;
+  overflow: hidden;
+  background: var(--color-bg-alt);
+}
+.td-overview__image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.td-overview__sub {
+  display: inline-block;
+  font-size: 12px;
+  letter-spacing: .2em;
+  color: var(--color-accent);
+  font-weight: 700;
+  margin-bottom: 14px;
+}
+.td-overview__body h3 {
+  font-size: 32px;
+  font-weight: 700;
+  color: var(--color-primary);
+  margin-bottom: 20px;
+  letter-spacing: -.01em;
+}
+.td-overview__body p {
+  font-size: 15px;
+  line-height: 1.8;
+  color: var(--color-text);
+  margin-bottom: 28px;
+}
+.td-overview__body ul {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.td-overview__body li {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 14.5px;
+  color: var(--color-primary);
+  font-weight: 500;
+}
+.td-overview__body li span {
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background: var(--color-accent);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 11px;
+}
+
+.td-related {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 18px;
+}
+.td-related a {
+  display: block;
+  background: #fff;
+  border: 1px solid var(--color-border);
+  transition: transform var(--dur) var(--ease), border-color var(--dur) var(--ease);
+}
+.td-related a:hover {
+  transform: translateY(-4px);
+  border-color: var(--color-primary);
+}
+.td-related__thumb {
+  aspect-ratio: 4 / 3;
+  overflow: hidden;
+}
+.td-related__thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform .7s var(--ease);
+}
+.td-related a:hover .td-related__thumb img { transform: scale(1.06); }
+.td-related span {
+  display: block;
+  text-align: center;
+  padding: 14px 10px;
+  font-size: 13.5px;
+  font-weight: 600;
+  color: var(--color-primary);
+}
+
+@media (max-width: 1024px) {
+  .td-overview { grid-template-columns: 1fr; gap: 32px; }
+  .td-overview__body h3 { font-size: 24px; }
+  .td-related { grid-template-columns: repeat(3, 1fr); }
+}
+@media (max-width: 640px) {
+  .td-related { grid-template-columns: repeat(2, 1fr); }
+}
