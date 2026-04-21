@@ -7,7 +7,7 @@ export default function StrengthsPage() {
     <>
       <PageHeader
         eyebrow="WHY JIREH"
-        title="지레 치과의 강점"
+        title="이레치과의 강점"
         description="환자 중심의 진료 환경과 첨단 시스템, 그리고 분과별 전문의가 함께합니다."
       />
       <Highlights />

@@ -17,13 +17,37 @@ export default function ContactPage() {
         <div className="container">
           <SectionHead
             eyebrow="CONTACT"
-            title="지레 치과의원"
+            title={CLINIC.name}
             description={CLINIC.tagline}
           />
 
-          <div className="contact__map" aria-label="지도">
-            <div className="contact__map-placeholder">
-              <span>지도 영역 (Naver 지도 iframe 삽입 예정)</span>
+          <div className="contact__map" aria-label="이레치과 약도">
+            <iframe
+              title="이레치과 역곡역 위치"
+              src={`https://maps.google.com/maps?q=${encodeURIComponent(CLINIC.map.query)}&hl=ko&z=17&output=embed`}
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+              allowFullScreen
+            />
+            <div className="contact__map-links">
+              <a href={CLINIC.map.googleMapsUrl} target="_blank" rel="noopener noreferrer">
+                지도에서 크게 보기 →
+              </a>
+            </div>
+          </div>
+
+          <div className="contact__transit">
+            <div>
+              <span className="contact__transit-label">지하철</span>
+              <p>1호선 <b>역곡역</b> 1번 출구 도보 2분</p>
+            </div>
+            <div>
+              <span className="contact__transit-label">버스</span>
+              <p>역곡역 정류장 · 간선 7·11·57 / 마을 013·014</p>
+            </div>
+            <div>
+              <span className="contact__transit-label">주차</span>
+              <p>건물 지하 1~2층 주차장 (2시간 무료)</p>
             </div>
           </div>
 

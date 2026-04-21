@@ -1,31 +1,37 @@
+import { Link } from 'react-router-dom'
 import { CLINIC } from '../data/clinic'
-import { img } from '../data/imageBase'
+import { u } from '../data/imageBase'
 import './ContactCTA.css'
 
 const CTAS = [
   {
-    bg: img('fimg1.jpg'),
+    bg: u('1589820296156-2454bb8a6ad1', 'card'),
     eyebrow: 'TEL',
     title: '전화 상담',
     desc: '진료·예약 문의를 전화로 편하게 남겨주세요.',
     label: CLINIC.phone,
     href: CLINIC.phoneTel,
+    external: false,
   },
   {
-    bg: img('fimg2.jpg'),
-    eyebrow: 'KAKAO',
-    title: '카카오 상담',
-    desc: '카카오톡으로 실시간 상담을 받아보실 수 있습니다.',
-    label: '카카오톡 상담 바로가기',
-    href: CLINIC.social.kakao,
+    bg: u('1590086782957-93c06ef21604', 'card'),
+    eyebrow: 'HOURS',
+    title: '진료시간 안내',
+    desc: '화·목 야간진료 20:30까지 · 토요일 14:00까지 · 일요일 및 공휴일은 휴진합니다.',
+    label: '자세한 진료시간 보기',
+    href: '/contact',
+    external: false,
+    internal: true,
   },
   {
-    bg: img('fimg3.jpg'),
-    eyebrow: 'NAVER',
-    title: '네이버 예약',
-    desc: '원하시는 시간에 비대면으로 간편하게 예약하세요.',
-    label: '네이버 예약 바로가기',
-    href: CLINIC.social.naverBooking,
+    bg: u('1583324113626-70df0f4deaab', 'card'),
+    eyebrow: 'VISIT',
+    title: '오시는 길',
+    desc: '역곡역 1번 출구 도보 2분 · 지하 주차장 2시간 무료 이용 가능.',
+    label: '찾아오시는 길 보기',
+    href: '/contact',
+    external: false,
+    internal: true,
   },
 ]
 
@@ -40,15 +46,22 @@ export default function ContactCTA() {
               <span className="cta-card__eyebrow">{c.eyebrow}</span>
               <h3 className="cta-card__title">{c.title}</h3>
               <p className="cta-card__desc">{c.desc}</p>
-              <a
-                href={c.href}
-                className="cta-card__btn"
-                target={c.href.startsWith('tel:') ? undefined : '_blank'}
-                rel="noreferrer"
-              >
-                {c.label}
-                <span aria-hidden="true">→</span>
-              </a>
+              {c.internal ? (
+                <Link to={c.href} className="cta-card__btn">
+                  {c.label}
+                  <span aria-hidden="true">→</span>
+                </Link>
+              ) : (
+                <a
+                  href={c.href}
+                  className="cta-card__btn"
+                  target={c.external ? '_blank' : undefined}
+                  rel={c.external ? 'noopener noreferrer' : undefined}
+                >
+                  {c.label}
+                  <span aria-hidden="true">→</span>
+                </a>
+              )}
             </div>
           </li>
         ))}

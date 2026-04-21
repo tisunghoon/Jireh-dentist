@@ -1,4 +1,4 @@
-import { img } from '../data/imageBase'
+import { u } from '../data/imageBase'
 import './PageHeader.css'
 
 type Props = {
@@ -9,7 +9,7 @@ type Props = {
 }
 
 export default function PageHeader({ eyebrow, title, description, bg }: Props) {
-  const background = bg ?? img('main1_bg1.jpg')
+  const background = bg ?? u('1606811971618-4486d14f3f99', 'pageHeader')
   return (
     <header className="page-header" style={{ backgroundImage: `url(${background})` }}>
       <div className="page-header__veil" />

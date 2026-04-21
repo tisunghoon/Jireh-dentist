@@ -82,28 +82,6 @@
 }
 .site-footer__hours strong { color: rgba(255,255,255,.75); font-weight: 500; }
 
-.site-footer__social {
-  display: flex;
-  gap: 8px;
-}
-.site-footer__social a {
-  width: 36px;
-  height: 36px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border: 1px solid rgba(255,255,255,.2);
-  font-size: 12px;
-  font-weight: 600;
-  color: rgba(255,255,255,.7);
-  transition: all var(--dur) var(--ease);
-}
-.site-footer__social a:hover {
-  background: var(--color-accent);
-  border-color: var(--color-accent);
-  color: #fff;
-}
-
 .site-footer__bottom {
   border-top: 1px solid rgba(255,255,255,.08);
   padding: 20px 0;

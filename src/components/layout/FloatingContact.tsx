@@ -4,12 +4,6 @@ import './FloatingContact.css'
 export default function FloatingContact() {
   return (
     <div className="floating-contact">
-      <a href={CLINIC.social.naverBooking} target="_blank" rel="noopener noreferrer" className="fc-btn fc-btn--naver" aria-label="네이버 예약">
-        <span>네이버<br />예약</span>
-      </a>
-      <a href={CLINIC.social.kakao} target="_blank" rel="noopener noreferrer" className="fc-btn fc-btn--kakao" aria-label="카카오 상담">
-        <span>카톡<br />상담</span>
-      </a>
       <a href={CLINIC.phoneTel} className="fc-btn fc-btn--call" aria-label="전화 상담">
         <span>전화<br />상담</span>
       </a>

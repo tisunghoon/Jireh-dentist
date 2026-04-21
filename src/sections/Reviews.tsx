@@ -6,12 +6,6 @@ import { REVIEWS } from '../data/reviews'
 import SectionHead from '../components/ui/SectionHead'
 import './Reviews.css'
 
-const platformLabel = {
-  naver: { label: 'NAVER', className: 'rv-tag--naver' },
-  kakao: { label: 'KAKAO', className: 'rv-tag--kakao' },
-  google: { label: 'GOOGLE', className: 'rv-tag--google' },
-}
-
 export default function Reviews() {
   return (
     <section className="reviews section">
@@ -35,25 +29,22 @@ export default function Reviews() {
           }}
           className="reviews__swiper"
         >
-          {REVIEWS.map((r, i) => {
-            const p = platformLabel[r.platform]
-            return (
-              <SwiperSlide key={i}>
-                <article className="rv-card">
-                  <div className="rv-card__top">
-                    <span className={`rv-tag ${p.className}`}>{p.label}</span>
-                    <span className="rv-card__date">{r.date}</span>
-                  </div>
-                  <div className="rv-card__stars">
-                    {'★★★★★'}
-                  </div>
-                  <h3 className="rv-card__title">{r.title}</h3>
-                  <p className="rv-card__preview">{r.preview}</p>
+          {REVIEWS.map((r, i) => (
+            <SwiperSlide key={i}>
+              <article className="rv-card">
+                <div className="rv-card__top">
+                  <span className="rv-card__date">{r.date}</span>
+                  <span className="rv-card__stars">★★★★★</span>
+                </div>
+                <h3 className="rv-card__title">{r.title}</h3>
+                <p className="rv-card__preview">{r.preview}</p>
+                <div className="rv-card__meta">
                   <span className="rv-card__tag">#{r.tag}</span>
-                </article>
-              </SwiperSlide>
-            )
-          })}
+                  <span className="rv-card__author">{r.author}</span>
+                </div>
+              </article>
+            </SwiperSlide>
+          ))}
         </Swiper>
       </div>
     </section>

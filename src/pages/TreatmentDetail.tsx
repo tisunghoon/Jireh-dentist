@@ -65,7 +65,7 @@ export default function TreatmentDetail() {
           <SectionHead
             eyebrow="OTHER"
             title="다른 진료과목"
-            description="지레 치과의 다양한 진료 분야를 둘러보세요."
+            description="이레치과의 다양한 진료 분야를 둘러보세요."
           />
           <ul className="td-related">
             {TREATMENTS.filter((t) => t.slug !== treatment.slug)

@@ -50,29 +50,23 @@ export default function Footer() {
               </li>
             ))}
           </ul>
-          <div className="site-footer__social">
-            <a href={CLINIC.social.naverBooking} target="_blank" rel="noopener noreferrer" aria-label="네이버 예약">
-              N
-            </a>
-            <a href={CLINIC.social.kakao} target="_blank" rel="noopener noreferrer" aria-label="카카오 상담">
-              K
-            </a>
-            <a href={CLINIC.social.instagram} target="_blank" rel="noopener noreferrer" aria-label="인스타그램">
-              IG
-            </a>
-            <a href={CLINIC.social.blog} target="_blank" rel="noopener noreferrer" aria-label="블로그">
-              B
-            </a>
-          </div>
         </div>
       </div>
 
       <div className="site-footer__bottom">
         <div className="container site-footer__bottom-inner">
           <p>
-            상호 <b>{CLINIC.name}</b> &nbsp;|&nbsp; 대표 {CLINIC.business.ceo} &nbsp;|&nbsp; 사업자등록번호 {CLINIC.business.registrationNumber}
+            상호 <b>{CLINIC.name}</b> &nbsp;|&nbsp; 대표원장 {CLINIC.business.ceo}
+            &nbsp;|&nbsp; 사업자등록번호 {CLINIC.business.registrationNumber}
+            &nbsp;|&nbsp; 의료기관 개설신고번호 {CLINIC.business.licenseNumber}
           </p>
-          <p className="site-footer__copy">© {new Date().getFullYear()} {CLINIC.nameEn}. All rights reserved.</p>
+          <p>
+            {CLINIC.address} · {CLINIC.phone}
+          </p>
+          <p className="site-footer__copy">
+            © {new Date().getFullYear()} {CLINIC.nameEn}. All rights reserved.
+            &nbsp;|&nbsp; {CLINIC.business.medicalAd}
+          </p>
         </div>
       </div>
     </footer>

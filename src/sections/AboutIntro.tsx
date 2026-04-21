@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom'
-import { img } from '../data/imageBase'
+import { u } from '../data/imageBase'
 import './AboutIntro.css'
 
 export default function AboutIntro() {
@@ -8,7 +8,7 @@ export default function AboutIntro() {
       <div className="container">
         <div className="about-intro__grid">
           <div className="about-intro__image">
-            <img src={img('inte03.jpg')} alt="진료 공간" loading="lazy" />
+            <img src={u('1606811971618-4486d14f3f99', 'card')} alt="진료 공간" loading="lazy" />
             <div className="about-intro__image-badge">
               <strong>同行</strong>
               <span>동행</span>
@@ -16,15 +16,15 @@ export default function AboutIntro() {
           </div>
 
           <div className="about-intro__text">
-            <span className="sect-head__eyebrow">ABOUT OUR CLINIC</span>
+            <span className="sect-head__eyebrow">ABOUT IRE DENTAL · 부천 역곡</span>
             <h2 className="about-intro__title">
-              진료의 처음부터 끝까지,<br />
-              <b>같은 곳을 바라보며 동행합니다</b>
+              역곡 한 건물 안에서,<br />
+              <b>온 가족 치과 진료를 완성합니다</b>
             </h2>
             <p className="about-intro__lead">
-              건강한 치아와 구강은 매일의 삶을 풍요롭게 만듭니다.<br />
-              정확한 진단과 분과별 전문의 협진으로<br />
-              예후까지 세심하게 관리하는 진료를 제공합니다.
+              이레치과는 역곡역 도보 2분 거리에서<br />
+              임플란트·교정·소아·보철까지 분과별 전문의 협진으로<br />
+              예후까지 꾸준히 책임지는 진료를 제공합니다.
             </p>
 
             <ul className="about-intro__points">

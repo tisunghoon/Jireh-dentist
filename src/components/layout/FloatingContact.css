@@ -24,8 +24,6 @@
   cursor: pointer;
 }
 .fc-btn:hover { transform: translateY(-4px) scale(1.05); }
-.fc-btn--naver { background: #03c75a; }
-.fc-btn--kakao { background: #fee500; color: #3a1d1d; }
 .fc-btn--call { background: var(--color-primary); }
 .fc-btn--top {
   background: #fff;

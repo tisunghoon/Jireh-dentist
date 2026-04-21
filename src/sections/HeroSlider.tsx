@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 import 'swiper/css'
 import 'swiper/css/effect-fade'
 import 'swiper/css/pagination'
-import { img } from '../data/imageBase'
+import { u } from '../data/imageBase'
 import { CLINIC } from '../data/clinic'
 import './HeroSlider.css'
 
@@ -19,27 +19,30 @@ type Slide = {
 
 const slides: Slide[] = [
   {
-    image: img('inte02.jpg'),
-    eyebrow: 'JIREH DENTAL CLINIC',
-    titleA: '언제나,',
-    titleB: '함께하는 치과',
-    description: '진료의 처음부터 끝까지, 평생 주치의로 동행하겠습니다.',
+    image: u('1629909613654-28e377c37b09', 'hero'),
+    eyebrow: 'IRE DENTAL CLINIC · 역곡역 1번 출구 도보 2분',
+    titleA: '역곡 가족의',
+    titleB: '평생 주치의, 이레치과',
+    description:
+      '임플란트·교정·소아·보철까지, 한 건물 안에서 분과별 전문 진료를 받으실 수 있습니다.',
     cta: { label: '진료철학 보기', to: '/about/philosophy' },
   },
   {
-    image: img('inte05.jpg'),
+    image: u('1629909615184-74f495363b67', 'hero'),
     eyebrow: 'DIGITAL IMPLANT',
-    titleA: '정밀하고 안전한',
+    titleA: '3D CT 네비게이션',
     titleB: '디지털 임플란트',
-    description: '3D CT와 네비게이션 시스템으로 정확한 식립을 계획합니다.',
+    description:
+      '정밀 진단 · 가이드 수술 · 장기 관리까지 안심할 수 있는 시스템으로 식립합니다.',
     cta: { label: '임플란트 알아보기', to: '/treatments/implant' },
   },
   {
-    image: img('inte07.jpg'),
-    eyebrow: 'SPECIALIST CARE',
-    titleA: '분과별 전문의가',
-    titleB: '함께 치료합니다',
-    description: '한 곳에서 모든 치과 진료를 협진으로 완성합니다.',
+    image: u('1596461404969-9ae70f2830c1', 'hero'),
+    eyebrow: 'FAMILY CARE',
+    titleA: '아이부터 어르신까지',
+    titleB: '온 가족이 함께하는 치과',
+    description:
+      '소아 전용 진료실, 보호자 상담실, 무장애 동선 — 역곡 이레치과가 준비했습니다.',
     cta: { label: '의료진 소개', to: '/about/doctors' },
   },
 ]

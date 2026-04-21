@@ -1,4 +1,4 @@
-import { img } from './imageBase'
+import { u } from './imageBase'
 
 export type Strength = {
   num: string
@@ -15,7 +15,7 @@ export const STRENGTHS: Strength[] = [
     subtitle: 'Specialist Collaboration',
     description:
       '각 분야의 전문의가 한자리에서 협력하여 최적의 치료 계획을 수립합니다.',
-    image: img('whyimg1.jpg'),
+    image: u('1584515933487-779824d29309', 'card'),
   },
   {
     num: '02',
@@ -23,7 +23,7 @@ export const STRENGTHS: Strength[] = [
     subtitle: 'Digital Implant',
     description:
       '3D CT와 컴퓨터 시뮬레이션을 활용해 정밀하고 안전하게 시술합니다.',
-    image: img('whyimg2.jpg'),
+    image: u('1593696140826-c58b021acf8b', 'card'),
   },
   {
     num: '03',
@@ -31,7 +31,7 @@ export const STRENGTHS: Strength[] = [
     subtitle: 'Sterilization',
     description:
       '1인 1핸드피스 원칙과 체계적인 멸균 시스템으로 안전을 지킵니다.',
-    image: img('whyimg3.jpg'),
+    image: u('1530210124550-912dc1381cb8', 'card'),
   },
   {
     num: '04',
@@ -39,7 +39,7 @@ export const STRENGTHS: Strength[] = [
     subtitle: 'Transparent Pricing',
     description:
       '모든 비급여 진료비를 공개하고, 치료 전 충분한 상담을 진행합니다.',
-    image: img('whyimg4.jpg'),
+    image: u('1563212034-a3c52118cce2', 'card'),
   },
   {
     num: '05',
@@ -47,6 +47,6 @@ export const STRENGTHS: Strength[] = [
     subtitle: 'Lifetime Care',
     description:
       '치료 이후에도 정기 점검과 관리로 오래도록 함께합니다.',
-    image: img('whyimg5.jpg'),
+    image: u('1551190822-a9333d879b1f', 'card'),
   },
 ]
